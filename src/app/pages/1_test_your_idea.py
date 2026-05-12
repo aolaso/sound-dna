@@ -93,7 +93,7 @@ def load_models():
     - El más grande (~9 MB) = modelo de regresión
     - El más pequeño (~2 MB) = modelo de clasificación
     """
-    model_dir = Path("src/model/production")
+    model_dir = Path(__file__).resolve().parents[2] / "model" / "production"
 
     if not model_dir.exists():
         return None, None, "❌ No se encontró la carpeta src/model/production/"

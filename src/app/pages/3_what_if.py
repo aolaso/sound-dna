@@ -90,7 +90,7 @@ SENSITIVITY_DELTA = {
 
 @st.cache_resource
 def load_models():
-    model_dir = Path("src/model/production")
+    model_dir = Path(__file__).resolve().parents[2] / "model" / "production"
     if not model_dir.exists():
         return None, None
     files = sorted(model_dir.glob("*.joblib"), key=lambda f: f.stat().st_size, reverse=True)
