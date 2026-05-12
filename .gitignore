@@ -1,0 +1,9 @@
+*.pkl
+*.joblib
+src/data/raw/
+src/data/processed/
+__pycache__/
+*.pyc
+.env
+.DS_Store
+.ipynb_checkpoints/
