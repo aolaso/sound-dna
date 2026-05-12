@@ -58,7 +58,7 @@ def load_dataset():
     Carga train.csv y test.csv y los une para buscar en todo el dataset.
     El decorador @st.cache_data hace que solo se cargue una vez (no en cada interacción).
     """
-    data_path = Path("src/data/processed/spotify_clean.csv")
+    data_path = Path(__file__).resolve().parents[3] / "data" / "processed" / "spotify_clean.csv"
     
 
     dfs = []
