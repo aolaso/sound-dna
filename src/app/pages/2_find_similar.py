@@ -58,7 +58,7 @@ def load_dataset():
     Carga train.csv y test.csv y los une para buscar en todo el dataset.
     El decorador @st.cache_data hace que solo se cargue una vez (no en cada interacción).
     """
-    data_path = Path(__file__).resolve().parents[3] / "data" / "processed" / "spotify_clean.csv"
+    data_path = Path(__file__).resolve().parents[3] / "src" / "data" / "processed" / "spotify_clean.csv"
     
 
     dfs = []
@@ -125,7 +125,7 @@ st.markdown("---")
 df = load_dataset()
 
 if df is None:
-    st.error("⚠️ No se encontraron src/data/train.csv o src/data/test.csv")
+    st.error("⚠️ No se encontró spotify_clean.csv")
     st.stop()
 
 feature_values = {}
