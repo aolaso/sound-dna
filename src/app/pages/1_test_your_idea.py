@@ -99,7 +99,7 @@ def load_models():
         return None, None, "❌ No se encontró la carpeta src/model/production/"
 
     joblib_files = sorted(
-        model_dir.glob("*.joblib"),
+        model_dir.glob("*.pkl"),
         key=lambda f: f.stat().st_size,
         reverse=True  # el más grande primero = regresión
     )

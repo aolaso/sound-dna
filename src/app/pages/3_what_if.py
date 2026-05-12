@@ -93,7 +93,7 @@ def load_models():
     model_dir = Path(__file__).resolve().parents[2] / "model" / "production"
     if not model_dir.exists():
         return None, None
-    files = sorted(model_dir.glob("*.joblib"), key=lambda f: f.stat().st_size, reverse=True)
+    files = sorted(model_dir.glob("*.pkl"), key=lambda f: f.stat().st_size, reverse=True)
     if len(files) < 2:
         return None, None
     return joblib.load(files[0]), joblib.load(files[1])
