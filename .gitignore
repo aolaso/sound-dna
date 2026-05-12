@@ -1,7 +1,16 @@
+# Excluir todos los pkl/joblib por defecto
 *.pkl
 *.joblib
+
+# EXCEPTO los modelos de producción
+!src/model/production/modelo_regresion_final.pkl
+!src/model/production/modelo_clasificacion_final.pkl
+
+# Datos
 src/data/raw/
 src/data/processed/
+
+# Python
 __pycache__/
 *.pyc
 .env
