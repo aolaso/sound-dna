@@ -85,7 +85,7 @@ resources/
 ```
 
 > **Modelo de regresión:** El archivo `modelo_regresion_final.pkl` (8.93 MB) no está incluido
-> en este repositorio por tamaño. Puedes descargarlo aquí: *[añadir link Google Drive]*
+> en este repositorio por tamaño. Puedes descargarlo 
 > o reproducirlo ejecutando los notebooks en orden (01 → 05).
 
 ---
@@ -185,7 +185,7 @@ Una columna índice que se coló al guardar el CSV sin `index=False`. El modelo 
 
 ## Web pública
 
-La versión consumer del proyecto está disponible en: **[sound-dna.lovable.app](https://sound-dna.lovable.app)** *(añadir URL real)*
+La versión consumer del proyecto está disponible en: **[sound-dna.lovable.app](https://sound-dna-lab.lovable.app)** 
 
 Frontend en React (Lovable) · Backend en FastAPI · Mismo modelo `.pkl`
 
